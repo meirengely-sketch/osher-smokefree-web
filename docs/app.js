@@ -99,20 +99,8 @@ async function syncSubscription() {
   if (!response.ok) throw new Error('שמירת הגדרות ההתראה נכשלה');
 }
 async function updateNotificationStatus() {
-  if (true) {
-    $('notification-status').textContent = 'לא זמינות בגרסת התצוגה';
-    $('notify-button').disabled = true;
-    return;
-  }
-  if (!('Notification' in window) || !('PushManager' in window) || !('serviceWorker' in navigator)) {
-    $('notification-status').textContent = 'הדפדפן אינו תומך בהתראות רקע';
-    $('notify-button').disabled = true;
-    return;
-  }
-  const reg = await getRegistration();
-  const active = await reg.pushManager.getSubscription();
-  $('notify-button').textContent = active ? 'כיבוי התראות' : 'הפעלת התראות';
-  $('notification-status').textContent = active ? 'פעיל' : Notification.permission === 'denied' ? 'נחסם בהגדרות הדפדפן' : 'כבוי';
+  $('notification-status').textContent = 'לא זמינות בגרסת התצוגה';
+  $('notify-button').disabled = true;
 }
 
 $('profile-form').addEventListener('submit', async (event) => {
