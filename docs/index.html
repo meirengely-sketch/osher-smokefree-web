@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="לראות את ההתקדמות, שעה אחר שעה, עם עובדות מבוססות ועידוד שעובד בשבילך.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <title>נושמים קדימה</title>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">↗</span><span>נושמים קדימה</span></div>
+      <span class="topbar-note">כל שעה נחשבת</span>
+    </header>
+
+    <main>
+      <section id="onboarding" class="onboarding" aria-labelledby="welcome-title">
+        <div class="eyebrow">דרך חדשה מתחילה כאן</div>
+        <h1 id="welcome-title">הפסקת לעשן.<br><span>בוא נראה מה הרווחת.</span></h1>
+        <p class="intro">שעון אישי, אבני דרך מבוססות מחקר ותזכורות בקצב שמתאים לך. בלי הבטחות על מה שלא ניתן למדוד.</p>
+        <form id="profile-form" class="profile-form">
+          <label for="name">איך קוראים לך?</label>
+          <input id="name" name="name" type="text" autocomplete="given-name" maxlength="40" placeholder="למשל, אושר" required>
+          <label for="quit-at">מתי הייתה הסיגריה האחרונה?</label>
+          <input id="quit-at" name="quitAt" type="datetime-local" required>
+          <label class="check-row"><input id="nrt" name="nrt" type="checkbox"><span>אני משתמש בתחליפי ניקוטין או בניקוטין אחר</span></label>
+          <p class="field-note">זה משנה רק ניסוח של אבן דרך אחת. שימוש בתחליפים הוא דרך מוכרת להפסיק לעשן.</p>
+          <button class="primary-button" type="submit">מתחילים לעקוב <span aria-hidden="true">←</span></button>
+        </form>
+        <p class="privacy-note">השם וזמן ההפסקה נשמרים תחילה בדפדפן שלך. התראות מופעלות רק אם תבחר בכך.</p>
+      </section>
+
+      <div id="dashboard" hidden>
+        <div class="dash-heading"><div><div class="eyebrow">המסע שלך</div><h1 id="greeting">בוקר טוב</h1></div><button id="edit-profile" class="text-button" type="button">עריכת פרטים</button></div>
+        <section class="hero" aria-labelledby="timer-title">
+          <div class="hero-top"><span class="hero-kicker">זמן בלי סיגריה</span><span class="live-pill"><span class="live-dot"></span> מתעדכן עכשיו</span></div>
+          <h2 id="timer-title" class="sr-only">זמן מאז הפסקת העישון</h2>
+          <div id="timer" class="timer" role="timer" aria-live="off"><span>0</span><small>ימים</small><span>00</span><small>שעות</small><span>00</span><small>דקות</small></div>
+          <p id="hero-subtitle" class="hero-subtitle">כל רגע מצטבר.</p>
+          <div class="hero-line"><span id="next-label">אבן הדרך הבאה</span><strong id="next-time">בקרוב</strong></div>
+          <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+        </section>
+
+        <div class="section-head"><div><div class="eyebrow">מבוסס על מקורות רפואיים</div><h2>מה קורה עכשיו?</h2></div><span id="stage-count" class="section-index"></span></div>
+        <section class="fact" aria-labelledby="fact-title"><div class="fact-icon" aria-hidden="true">✦</div><div><div id="fact-stage" class="fact-stage"></div><h3 id="fact-title">ההתקדמות שלך</h3><p id="fact-copy"></p><a id="fact-source" href="#" target="_blank" rel="noopener noreferrer">למקור הרפואי ↗</a></div></section>
+        <p class="accuracy-note">אלה זמנים ממוצעים מהמחקר, לא בדיקה אישית. חלק מהשינויים מורגשים בהדרגה.</p>
+
+        <section class="appearance" aria-labelledby="appearance-title"><div class="eyebrow">מראה ואיכות חיים</div><h2 id="appearance-title">גם הדברים שרואים נחשבים</h2><p id="appearance-copy"></p><a href="https://www.nhs.uk/better-health/quit-smoking/why-quit-smoking/understanding-the-true-impact-of-smoking/" target="_blank" rel="noopener noreferrer">מה NHS אומר על עור, שיניים ומראה ↗</a></section>
+
+        <div class="section-head second"><div><div class="eyebrow">צעד קטן להיום</div><h2>להמשיך בתנועה</h2></div><span id="day-badge" class="day-badge">יום 1</span></div>
+        <section class="action-panel"><p id="daily-action"></p><button id="new-action" class="secondary-button" type="button">עוד רעיון</button></section>
+
+        <section class="settings" aria-labelledby="notifications-title">
+          <div class="settings-heading"><div><div class="eyebrow">בקצב שלך</div><h2 id="notifications-title">תזכורות חכמות</h2></div><span aria-hidden="true" class="bell"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/><path d="M10 21h4"/></svg></span></div>
+          <p>התראות על אבני דרך אמיתיות, וביניהן תזכורת קצרה. אפשר לשנות או להשתיק בכל רגע.</p>
+          <div class="setting-grid"><label for="frequency">תדירות</label><select id="frequency"><option value="1">כל שעה ערה</option><option value="3">כל 3 שעות ערות</option><option value="milestones">אבני דרך בלבד</option></select><label for="wake">שעת התחלה</label><input id="wake" type="time" value="08:00"><label for="sleep">שעת סיום</label><input id="sleep" type="time" value="22:00"></div>
+          <div class="notification-actions"><button id="notify-button" class="secondary-button" type="button" disabled>התראות רקע בהכנה</button><span id="notification-status" role="status">לא זמינות בגרסת התצוגה</span></div>
+          <p class="setting-note">התראות מחייבות אישור בדפדפן ואתר HTTPS. אם לא תאשר, השעון והמידע עדיין יעבדו.</p>
+        </section>
+        <footer><a href="./RESEARCH_HE.md">למחקר המלא והמקורות</a><span>נבנה בשביל ההתקדמות שלך, לא בשביל אשמה.</span></footer>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

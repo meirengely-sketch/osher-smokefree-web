@@ -1,0 +1,100 @@
+{
+  "events": [
+    {
+      "minute": 0,
+      "label": "הרצף התחיל",
+      "claim": "הרצף ללא סיגריות התחיל; החשיפה לעשן מסיגריה נוספת נפסקה.",
+      "class": "כללי",
+      "source": "https://www.who.int/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation",
+      "condition": ""
+    },
+    {
+      "minute": 20,
+      "label": "20 דקות",
+      "claim": "דופק ולחץ דם מתחילים לרדת סביב 20 דקות.",
+      "class": "אבן דרך משוערת",
+      "source": "https://www.who.int/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation",
+      "condition": ""
+    },
+    {
+      "minute": 480,
+      "label": "8 שעות",
+      "claim": "לפי NHS, פחמן חד־חמצני בדם ירד בערך בחצי ורמות החמצן מתאוששות.",
+      "class": "אבן דרך משוערת",
+      "source": "https://www.nhs.uk/better-health/quit-smoking/ready-to-quit-smoking/what-could-happen-when-you-quit-smoking/",
+      "condition": ""
+    },
+    {
+      "minute": 720,
+      "label": "12 שעות",
+      "claim": "WHO מתאר חזרה של פחמן חד־חמצני בדם לרמה תקינה סביב 12 שעות.",
+      "class": "אבן דרך משוערת",
+      "source": "https://www.who.int/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation",
+      "condition": ""
+    },
+    {
+      "minute": 1440,
+      "label": "24 שעות",
+      "claim": "ללא תחליפי ניקוטין או מקור ניקוטין אחר, רמת הניקוטין בדם עשויה לרדת לאפס סביב יממה. אין להציג למשתמש בניקוטין.",
+      "class": "מותנה בהיעדר ניקוטין",
+      "source": "https://www.emro.who.int/timeliner/quit.html",
+      "condition": "ללא תחליפי ניקוטין או שימוש אחר בניקוטין"
+    },
+    {
+      "minute": 2880,
+      "label": "48 שעות",
+      "claim": "לפי NHS, פחמן חד־חמצני מגיע לרמת לא־מעשן; טעם וריח עשויים להתחיל להשתפר.",
+      "class": "אבן דרך משוערת",
+      "source": "https://www.nhs.uk/better-health/quit-smoking/ready-to-quit-smoking/what-could-happen-when-you-quit-smoking/",
+      "condition": ""
+    },
+    {
+      "minute": 4320,
+      "label": "72 שעות",
+      "claim": "לפי NHS, הסימפונות מתחילים להירגע; חלק מהאנשים עשויים להרגיש נשימה קלה יותר.",
+      "class": "אבן דרך משוערת",
+      "source": "https://www.nhs.uk/better-health/quit-smoking/ready-to-quit-smoking/what-could-happen-when-you-quit-smoking/",
+      "condition": ""
+    },
+    {
+      "minute": 20160,
+      "label": "בערך שבועיים",
+      "claim": "סביב שבועיים מתחיל חלון של 2–12 שבועות שבו זרימת הדם ותפקוד הריאות עשויים להשתפר בהדרגה.",
+      "class": "תחילת חלון זמן",
+      "source": "https://www.who.int/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation",
+      "condition": ""
+    }
+  ],
+  "dailyActions": [
+    "רשום למה החלטת להפסיק.",
+    "זהה שעה ביום שבה הופיע דחף.",
+    "הכן הסחת דעת קצרה לדחף הבא.",
+    "בקש מחבר להיות זמין כשקשה.",
+    "בדוק איזה טריגר הופיע אחרי ארוחה.",
+    "שים לב לטעם ולריח בלי לצפות לשינוי קבוע.",
+    "תכנן מראש מפגש שבו מציעים סיגריות.",
+    "סמן שבוע ללא סיגריה וחשוב מה עזר.",
+    "נסה לשנות שגרת קפה שמעוררת דחף.",
+    "בחר פעולה קצרה במקום הפסקת עישון.",
+    "תעד דחף שחלף מעצמו.",
+    "בדוק אם שינה או מצב רוח דורשים תמיכה.",
+    "תרגל תשובה קצרה להצעת סיגריה.",
+    "שים לב לשינוי אישי בריח הבגדים.",
+    "ציין שבועיים והמשך לתעד איך אתה מרגיש.",
+    "תעד איך הרגישה הליכה קצרה.",
+    "בחר פעילות גופנית קצרה שמתאימה לך.",
+    "השווה לעצמך מאמץ בפעילות דומה, בלי להסיק מדד רפואי.",
+    "זהה את הטריגר הקשה של השבוע.",
+    "כתוב סיבה אישית אחת להמשיך.",
+    "ציין שלושה שבועות ללא סיגריות.",
+    "בדוק אם השתנתה חוויית הטעם או הריח.",
+    "תכנן מה תעשה במקרה של דחף פתאומי.",
+    "בחר חבר או פעילות שיכולים לעזור.",
+    "שים לב להצלחה קטנה שלא קשורה למראה.",
+    "בדוק מה עזר לך יותר מכול עד עכשיו.",
+    "תכנן סוף שבוע בלי סיגריות.",
+    "ציין ארבעה שבועות של רצף.",
+    "בחר יעד מעשי לחודש הבא.",
+    "סכם 30 יום ותכנן תמיכה להמשך."
+  ]
+}
